@@ -1,0 +1,23 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.titulo{
+    font-family: "Inter", sans-serif;
+    font-size: 96px;
+    color: rgba(91, 11, 155, 1);
+    justify-content: center;
+
+}
+.faixaroxa{
+    background-color: rgba(91, 11, 155, 1);
+    width: 60px;
+    height: 100%;
+    position: absolute;
+}
+header h1{
+    display: flex;
+    justify-content: center ;
+}
