@@ -42,6 +42,7 @@ main{
     border-bottom-style: none;
     outline: none;
     width: 560px;
+    background-color: transparent;
 }
 .input2{
     border-top-style: none ;
@@ -50,6 +51,7 @@ main{
     border-bottom-style: none;
     outline: none;
     width: 560px;
+    background-color: transparent;
 }
 .faixaroxa{
     background-color: rgba(91, 11, 155, 1);
