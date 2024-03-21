@@ -3,6 +3,17 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+body{
+    height: 100vh;
+}
+main{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .titulo{
     font-family: "Inter", sans-serif;
@@ -11,18 +22,69 @@ box-sizing: border-box;
     justify-content: center;
 
 }
+.text1{
+    padding: 16px;
+    justify-content: space-evenly;
+}
+
+.text2{
+    padding: 16px;
+}
+
+.inputs{
+    height: 200px;
+    
+}
+.input1{
+    border-top-style: none ;
+    border-left-style: none ;
+    border-right-style: none ;
+    border-bottom-style: none;
+    outline: none;
+    width: 560px;
+}
+.input2{
+    border-top-style: none ;
+    border-left-style: none ;
+    border-right-style: none ;
+    border-bottom-style: none;
+    outline: none;
+    width: 560px;
+}
 .faixaroxa{
     background-color: rgba(91, 11, 155, 1);
     width: 60px;
-    height: 100%;
+    height: 100vh;
     position: absolute;
 }
 header h1{
     display: flex;
     justify-content: center ;
 }
-.input1{
-    border-top-style: none;
-    border-right-style: none;
-    border-left: none;
+footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+img{
+    width: 40px;
+    height: 40px;
+}
+.text1{
+    border-bottom: 2px solid black;
+}
+.text2{
+    border-bottom: 2px solid black;
+}
+button{
+    position: absolute;
+    display: flex;
+    padding: 16px;
+    right: 20px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
