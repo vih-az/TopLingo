@@ -24,7 +24,7 @@ const mostrarTraducao = async function(){
 
 traducaoInput.addEventListener('keypress', (event) => {
     if(event.code === 'Enter'){
-        mostrarTraducao()
+        mudarBackgroundAlice()
     }
 })
 const mudarCorDeFundo = function(){
@@ -36,6 +36,12 @@ const mudarCorDeFundo = function(){
         traducaoInput2.style.color = '#ffffff'
         const divInput1 = document.getElementById('divInput1')
         divInput1.style.borderBottom = '2px solid #ffffff'
+        const divInput2 = document.getElementById('divInput2')
+        divInput2.style.borderBottom = '2px solid #ffffff'
+        const traducaoInput1 = document.getElementById('texto')
+        traducaoInput1.style.color = '#ffffff'
+        const footer = document.querySelector('footer')
+        footer.style.color = '#ffffff'
     }else{
         mudar = false
         lua.src = './img/lua.png'
@@ -46,6 +52,20 @@ const mudarCorDeFundo = function(){
         divInput1.style.borderBottom = '2px solid #000000'
         const divInput2 = document.getElementById('divInput2')
         divInput2.style.borderBottom = '2px solid #000000'
+        const footer = document.querySelector('footer')
+        footer.style.color = '#000000'
+        const traducaoInput1 = document.getElementById('texto')
+        traducaoInput1.style.color = '#000000'
     }
 }
+const mudarBackgroundAlice = function(){
+    if(traducaoInput.value == "alice".toLowerCase()){
+        console.log(traducaoInput.value)
+        mudarCorDeFundo()
+    }else{
+        mostrarTraducao()
+    }
+}
+
+
 mudarBotao.addEventListener('click', mudarCorDeFundo)
