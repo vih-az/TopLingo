@@ -28,7 +28,6 @@ traducaoInput.addEventListener('keypress', (event) => {
     }
 })
 
-
 const mudarCorDeFundo = function(){
     if(mudar == false){
         mudar = true
@@ -68,6 +67,7 @@ const mudarBackgroundAlice = function(){
         mostrarTraducao()
     }
 }
+
 const recognition = new webkitSpeechRecognition()
 recognition.continuous = true
 recognition.interimResults = true
@@ -91,3 +91,7 @@ const btnComecar = document.getElementById('comecar')
 
 btnComecar.addEventListener('click', recognition.start())
 mudarBotao.addEventListener('click', mudarCorDeFundo)   
+
+
+
+mudarBotao.addEventListener('click', mudarCorDeFundo)
